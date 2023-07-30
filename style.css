@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Borel&display=swap");
+/* all scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3b4142;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 5;
+  gap: 50px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgba(172, 172, 172, 0.2);
+  height: 60px;
+  padding: 20px 30px;
+}
+
+.menu {
+  font-size: 25px;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.imgs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.flags {
+  width: 25px;
+  height: 20px;
+}
+
+.flags:hover {
+  cursor: pointer;
+}
+
+.websiteName {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 35px;
+}
+
+.websiteName h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+}
+
+.websiteName h2 span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+}
+
+.username p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 620px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 120px;
+  background-color: #f9f8f9;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  gap: 30px;
+}
+
+.textContainer h2 {
+  font-size: 50px;
+  font-family: "Rubik", sans-serif;
+}
+
+.textContainer p {
+  line-height: 30px;
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Rubik", sans-serif;
+}
+
+.textContainer p span {
+  color: rgba(34, 34, 34, 0.8);
+}
+
+.textContainer button {
+  align-self: flex-start;
+  color: white;
+  background-color: rgba(40, 44, 44, 0.8);
+  border: none;
+  border-radius: 10px;
+  padding: 20px 80px;
+  font-size: 20px;
+  transition: all 1s;
+}
+
+.textContainer button:hover {
+  cursor: pointer;
+  background-color: rgba(15, 17, 17, 0.8);
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.imgContainer img {
+  width: 90%;
+  animation: animation 5s;
+}
+
+.imgContainer img:hover {
+  animation: animation 5s;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(1.5);
+  }
+
+  30% {
+    transform: rotate(40deg);
+    /* transform: scale(0.8); */
+  }
+}
+
+.wave {
+  background-color: #f9f8f9;
+  outline: none;
+  border: none;
+}
+
+.Arab_Students {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 700px;
+  gap: 15px;
+  padding-top: 150px;
+}
+
+.Arab_Students h2 {
+  font-size: 35px;
+  font-family: "Rubik", sans-serif;
+}
+
+.Arab_Students img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+}
+
+.student_saying {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f9f8f9;
+  height: 700px;
+  padding: 0 30px;
+  gap: 15px;
+}
+
+.student_saying h1 {
+  font-family: "Rubik", sans-serif;
+  margin-top: 15px;
+  font-size: 35px;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+
+.videoItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#frame {
+  width: 90%;
+  height: 100%;
+}
+
+.videoItems h1 {
+  align-self: flex-start;
+  margin: 1px;
+  padding: 0 30px;
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+}
+
+.videoItems p {
+  padding: 0 30px;
+}
+
+.videoText {
+  margin-bottom: 50px;
+}
+
+.willLearn {
+  width: 100%;
+  height: 1100px;
+}
+
+.learnItems {
+  display: flex;
+  gap: 15px;
+  padding: 90px 30px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.learnText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+}
+
+.learnText h1 {
+  font-size: 50px;
+  font-family: "Rubik", sans-serif;
+}
+
+.learnText p {
+  width: 70%;
+  font-size: 20px;
+}
+
+.learnText button {
+  align-self: flex-start;
+  color: white;
+  background-color: rgba(40, 44, 44, 0.8);
+  border: none;
+  border-radius: 10px;
+  padding: 15px 70px;
+  font-size: 20px;
+  transition: all 1s;
+  margin-left: 100px;
+}
+
+.learnText button:hover {
+  background-color: rgba(40, 44, 44, 1);
+
+  cursor: pointer;
+}
+
+.cardItems {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.Cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0 0 15px 1px black;
+  border-radius: 15px;
+}
+
+.Cards:hover {
+  cursor: pointer;
+}
+
+.Cards p {
+  opacity: 0;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.5s ease 0s;
+  text-shadow: 1px -1px 1px black;
+}
+.Cards:hover p {
+  opacity: 1;
+  transition: all 0.5s ease 0s;
+  cursor: pointer;
+}
+
+.icon1 {
+  color: #f16629;
+}
+
+.icon2 {
+  color: #3c5fe4;
+}
+.icon3 {
+  color: #f7df1e;
+}
+.icon4 {
+  color: #00d8ff;
+}
+
+.learnitem {
+  align-self: flex-start;
+  margin-left: 90px;
+  font-size: 25px;
+}
+
+.wave1 {
+  transform: scaleY(-1);
+}
+
+.Discord {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  gap: 10px;
+  padding: 0 50px;
+  max-width: 100%;
+  background-color: #f9f8f9;
+}
+
+.discordItem {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.discordItem h1 {
+  font-size: 50px;
+}
+
+.discordItem p {
+  font-size: 25px;
+  color: #686868;
+}
+
+.discordItem button {
+  padding: 15px 20px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  background-color: rgba(40, 44, 44, 0.8);
+  box-shadow: 0;
+  transition: all 0.5s ease 0.2s;
+}
+
+.discordItem button:hover {
+  cursor: pointer;
+  background-color: rgba(40, 44, 44, 1);
+}
+
+@media (max-width: 900px) {
+  header {
+    overflow: hidden;
+  }
+  main {
+    flex-direction: column;
+    height: 850px;
+    padding: 50px 0 0;
+  }
+  .textContainer {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .textContainer button {
+    align-self: center;
+  }
+
+  .willLearn {
+    height: 1500px;
+  }
+
+  .learnItems {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .section2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .cardItems {
+    width: 90%;
+  }
+
+  .learnText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .learnText h1 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .learnitem {
+    text-align: center;
+    align-self: center;
+    margin: 0;
+  }
+
+  .learnText button {
+    align-self: center;
+    margin: 0;
+  }
+
+  .learnImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 25%;
+  }
+
+  .learnImg img {
+    width: 100%;
+  }
+
+  .Discord {
+    flex-direction: column-reverse;
+  }
+  .discordImg {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 90%;
+    height: 300px;
+  }
+  .discordImg img {
+    width: 100%;
+  }
+  .wave1 {
+    margin: 95px 0 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .video {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 585px) {
+  .wave1 {
+    margin: 165px 0 0px;
+  }
+}
+
+@media (max-width: 506px) {
+  .wave1 {
+    margin: 200px 0 0px;
+  }
+}
+
+@media (max-width: 456px) {
+  .cardItems {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    gap: 10px;
+    padding: 20px 20px;
+  }
+  .lang {
+    gap: 10px;
+  }
+
+  .websiteName h2 {
+    font-size: 20px;
+  }
+
+  .username p {
+    font-size: 15px;
+  }
+  .name {
+    font-size: 15px;
+  }
+  .Discord {
+    height: auto;
+  }
+}
+
+@media (max-width: 423px) {
+  header {
+    gap: 10px;
+    padding: 20px 20px;
+  }
+  .lang {
+    gap: 10px;
+  }
+
+  .websiteName h2 {
+    font-size: 20px;
+  }
+
+  .username p {
+    font-size: 15px;
+  }
+  .name {
+    font-size: 15px;
+  }
+
+  .wave1 {
+    margin: 250px 0 0px;
+  }
+
+  .Discord {
+    height: auto;
+  }
+}
+
+@media (max-width: 410px) {
+  .wave1 {
+    margin: 370px 0 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  .wave1 {
+    margin: 400px 0 0;
+  }
+}
+
+@media (max-width:368px) {
+  .websiteName h2{
+    font-size: 15px;
+  }
+}
+
+@media (max-width:355px) {
+  .wave1{
+    margin: 500px 0 0;
+  }
+}
+
+@media (max-width:328px){
+  .wave1{
+    margin: 600px 0 0;
+  }
+}
+
+@media (max-width:320px) {
+  .websiteName h2{
+    font-size: 15px;
+  }
+  .websiteName h2 span{
+    font-size: 10px;
+  }
+}
