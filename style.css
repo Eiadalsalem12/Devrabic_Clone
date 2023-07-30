@@ -203,7 +203,7 @@ main {
   flex-direction: column;
   width: 100%;
   background-color: #f9f8f9;
-  height: 700px;
+  height: auto;
   padding: 0 30px;
   gap: 15px;
 }
